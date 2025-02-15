@@ -19,7 +19,7 @@ Name: "{group}\Uninstall JBJTeknik Indexer"; Filename: "{uninstallexe}"
 Name: "{commondesktop}\JBJTeknik Indexer"; Filename: "{app}\JBJTeknik Indexer.exe"
 
 [Run]
-Filename: "{app}\JBJTeknik Indexer.exe"; Description: "Launch JBJTeknik Indexer"; Flags: nowait postinstall skipifsilent
+Filename: "{app}\svelte-app.exe"; Description: "Launch JBJTeknik Indexer"; Flags: nowait postinstall skipifsilent
 
 [UninstallDelete]
 Type: filesandordirs; Name: "{app}"
