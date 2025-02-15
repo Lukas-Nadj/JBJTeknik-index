@@ -16,6 +16,7 @@ Source: "..\svelte-app-win32-x64\*"; DestDir: "{app}"; Flags: recursesubdirs cre
 [Icons]
 Name: "{group}\JBJTeknik Indexer"; Filename: "{app}\JBJTeknik Indexer.exe"
 Name: "{group}\Uninstall JBJTeknik Indexer"; Filename: "{uninstallexe}"
+Name: "{commondesktop}\JBJTeknik Indexer"; Filename: "{app}\JBJTeknik Indexer.exe"
 
 [Run]
 Filename: "{app}\JBJTeknik Indexer.exe"; Description: "Launch JBJTeknik Indexer"; Flags: nowait postinstall skipifsilent

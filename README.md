@@ -10,8 +10,8 @@ Or it creates the file, but doesn't have permission to edit or save to it. so cr
 ## What it looks like
 
 <div>
-  <img src="image.png" height= 400\>
-  <img src="image2.png" height= 400\>
+  <img src="Assets/image.png" height= 400\>
+  <img src="Assets/image2.png" height= 400\>
 </div>
 
 ## Build to windows

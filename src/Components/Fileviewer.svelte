@@ -51,7 +51,7 @@
         <!-- svelte-ignore a11y-mouse-events-have-key-events -->
         <div class="img">
           {#if image.src.toLowerCase().endsWith(".pdf")}
-            <img draggable="false" style="position:relative; right:1%" src="../pdf-file-placeholder.png" alt={console.log(image.src)} class="billede pdf" />
+            <img draggable="false" style="position:relative; right:1%" src="../Assets/pdf-file-placeholder.png" alt={console.log(image.src)} class="billede pdf" />
           {:else if imgfile(image.src)}
           <img style="width: 100px; max-width: 100px" draggable="false" src={image.src} alt={console.log(image.src)} class="billede" />
           {:else}
@@ -77,7 +77,7 @@
     {/each}
     {#if images.length===0}
     <div class="center">
-      <img src="../not-found.png" alt="" width="200px" style="cursor-events: none" draggable="false">
+      <img src="../Assets/not-found.png" alt="" width="200px" style="cursor-events: none" draggable="false">
       <p style="margin:0px">Ingen filer endnu</p>
     </div>
     {/if}
