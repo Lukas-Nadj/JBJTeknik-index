@@ -30,7 +30,11 @@ Then we make use of inno-compiler on npm.
 ```
 npm install innosetup-compiler
 ```
-then just use the npm script 
+then just use the npm scripts, first to build the uncompressed program files:
+```
+npm run package
+```
+and then to bundle it.
 ```
 npm run build-release-win
 ```
