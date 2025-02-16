@@ -10,13 +10,8 @@
   let changed = false; //whether there have been changes to the table
   $: favoriteVisible = false; //the favorites bar, changes css
 
-  let vare = { //boilerplate for an item
-    Varenummer: 0,
-    Produktnavn: "",
-    Pris: 0,
-  };
-
   let slettetVarer = []; //deleted items
+  $: slettetVarer = slettetVarer;
 
   let varer = ["DoNotSave"]; // selve varene
   let data = window.electronApi.loadJSON(); //henter varer.json
@@ -156,7 +151,7 @@
           </tbody>
         </table>
 
-        <Table bind:favoriteVisible bind:loading bind:images bind:varer />
+        <Table bind:favoriteVisible bind:loading bind:images bind:varer bind:slettetVarer/>
       </div>
     </div>
 

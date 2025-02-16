@@ -9,9 +9,14 @@
   export let favoriteVisible;
   export let loading;
   export let images;
+  export let slettetVarer;
+
+
   $: hidden = !favoriteVisible;
 
-  $: checkedVarer = varer.filter((vare) => (vare.checked===true));
+  $: checkedVarer = varer
+              .map((item, index) => ({ ...item, originalIndex: index }))
+              .filter((vare) => (vare.checked===true));
 
   async function imagegallery(vn) {
     const dialogElement = document.getElementById("billeder");
@@ -75,8 +80,10 @@
               <td style="display: flex; justify-content: center; align-items: center; margin: 0px; height: 30px"
                 ><button
                   on:click={() => {
-                    varer.splice(i, 1);
+                    slettetVarer.push(varer[item.originalIndex]);
+                    console.log(varer.splice(item.originalIndex, 1));
                     varer = varer;
+                    checkedVarer = checkedVarer;
                   }}
                   src="../public/trash_icon.png"
                   style="margin: 0px; box-sizing: border-box ;width: 25px; height: 25px; padding: 3px;background-color: #0F142D; border-radius:24px"
