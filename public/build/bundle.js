@@ -2867,10 +2867,11 @@ var app = (function () {
     			if (!src_url_equal(button.src, button_src_value = "../public/trash_icon.png")) attr_dev(button, "src", button_src_value);
     			set_style(button, "margin", "0px");
     			set_style(button, "box-sizing", "border-box ");
-    			set_style(button, "width", "25px");
-    			set_style(button, "height", "25px");
+    			set_style(button, "width", "15px");
+    			set_style(button, "height", "15px");
     			set_style(button, "padding", "3px");
-    			set_style(button, "background-color", "#0F142D");
+    			set_style(button, "padding-bottom", "0px");
+    			set_style(button, "background-color", "#751201");
     			set_style(button, "border-radius", "24px");
     			add_location(button, file$1, 80, 17, 3578);
     			set_style(td5, "display", "flex");

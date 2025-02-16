@@ -86,7 +86,7 @@
                     checkedVarer = checkedVarer;
                   }}
                   src="../public/trash_icon.png"
-                  style="margin: 0px; box-sizing: border-box ;width: 25px; height: 25px; padding: 3px;background-color: #0F142D; border-radius:24px"
+                  style="margin: 0px; box-sizing: border-box ;width: 15px; height: 15px; padding: 3px; padding-bottom:0px;background-color: #751201; border-radius:24px"
                 /></td
               >
             </tr>
